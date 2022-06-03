@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h1>Contact</h1>
+        <fieldset>
+            <legend>Veuillez saisir les informations suivantes :</legend>
+            <div>
+                <label for="nom_personne">Nom</label>
+                <input type="text" name="nom" id="nom_personne" required>
+            </div>
+            <div>
+                <label for="prenom_personne">Prénom</label>
+                <input type="text" name="prenom" id="prenom_personne" required>
+            </div>
+            <div>
+                <label for="email_personne">Email</label>
+                <input type="text" name="email" id="email_personne" required>
+            </div>
+            <div>
+                <label for="num_personne">Numéro de téléphone</label>
+                <input type="text" name="numero" id="num_personne">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Veuillez choisir votre canal de contact privilégié :</legend>
+            <div>
+                <select id="canal">
+                    <label for="canal">Canal de préférence :</label>
+                    <option value="Email">Email</option>
+                    <option value="Telephone">Téléphone</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Veuillez saisir votre message :</legend>
+            <div>
+                <label for="message_saisi">Message</label>
+                <textarea name="message_saisi" id="message cols="30" rows="4" required></textarea>
+            </div>
+        </fieldset>
+        <button type="submit">Envoyer</button>
+    </form>
+    <!--Lien pour revenir à la page d'index-->
+    <a href="index.html">Retour</a>
+</body>
+
+</html>

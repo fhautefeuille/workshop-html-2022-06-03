@@ -1,0 +1,21 @@
+/*Marge à gauche et à droite sur toute la page*/
+body {
+    margin-left: 200px;
+    margin-right:  200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Paragraphe d'en-tête en gras*/
+header p {
+    font-weight: bold;
+}
+
+/*Section de la date en gris*/
+header section {
+    color: gray;
+}
+
+/*Citations ou phrases entre guillements en italiques*/
+q {
+    font-style: italic;
+}

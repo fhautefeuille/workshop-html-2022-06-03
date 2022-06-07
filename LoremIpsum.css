@@ -1,0 +1,35 @@
+/* Titre 1 en petite capital avec les premières lettres en plus grand + centré */
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+/* Numéro de liste en gras et à la taille d'un titre 2
+Pour correspondre au format d'un titre 2 */
+ol li::marker {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Titre 2 souligné */
+h2 {
+    text-decoration: underline;
+}
+
+/* Titre 3 en italique et sur/souligné */
+h3 {
+    font-style: italic;
+    text-decoration: overline underline;
+}
+
+/* Décalage de la 1ere ligne de 30px
+Texte en justifié avec des marges sur les côtés
+*/
+p {
+    text-indent: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+

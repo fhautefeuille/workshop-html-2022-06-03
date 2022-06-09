@@ -1,0 +1,13 @@
+/*Fais appraître les bords du tableau et cellules en 1 ligne solide d'épaisseur 1x*/
+table, th, td {
+    border: solid 1px;
+}
+
+/*Ajustement de la taille du tableau 600x500px
+Supprime les espaces entre les cellules
+*/
+table {
+    width: 600px;
+    height: 500px;
+    border-spacing: 0;
+}

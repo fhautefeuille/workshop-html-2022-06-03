@@ -1,0 +1,74 @@
+/* Titre 1 en petite capital avec les premières lettres en plus grand + centré */
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+/* Numéro de liste en gras et à la taille d'un titre 2
+Pour correspondre au format d'un titre 2 */
+ol li::marker {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Titre 2 souligné */
+h2 {
+    text-decoration: underline;
+}
+
+/* Titre 3 en italique et sur/souligné */
+h3 {
+    font-style: italic;
+    text-decoration: overline underline;
+}
+
+/* Décalage de la 1ere ligne de 30px
+Texte en justifié avec des marges sur les côtés
+*/
+p {
+    text-indent: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+/*1ere ligne de chaque premier paragraphe après un titre de niveau 
+2 en petites capitales*/
+h2+p::first-line {
+    font-variant: small-caps;
+}
+
+/*Taille de police de la 1ere lettre de chaque paragraphe fixée à 2em */
+p::first-letter {
+    font-size: 2em;
+}
+
+/*Ajoute la langue du paragraphe en haut à droite, en gris, petites capitales
+Cas du Français*/
+p[lang="fr"]::before {
+    /*insert un contenu*/
+    content: "Français"; 
+    display: block;
+    font-variant: small-caps;
+    font-size: 15px;
+    color: gray;
+    /*Extrait le contenu du paragraphe */
+    position:  absolute; 
+    /* repositionne le contenu pour ne pas chevaucher le paragraphe et
+    permet d'être lié au paragraphe et non à la paga avec top, bottom...*/
+    transform: translate(-50%, -50%); 
+}
+
+/*Ajoute la langue du paragraphe en haut à droite, en gris, petites capitales
+Cas du Latin */
+p[lang="la"]::before {
+    /*insert un contenu*/
+    content: "Latin"; 
+    display: block;
+    font-variant: small-caps;
+    font-size: 15px;
+    color: gray;
+    position:  absolute; 
+    transform: translate(-50%, -50%);
+}

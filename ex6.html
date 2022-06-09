@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex6.css">
+    <title>Ex 6</title>
+</head>
+
+<body>
+    <h1>Réseaux Sociaux</h1>
+    <img src="social-media-2083456_640.png" alt="Icône réseaux sociaux" usemap="#liens">
+    <!-- map ouvrant des liens dans un nouvel onglets des pages web correspondantes à l'icône-->
+    <map name="liens">
+        <!-- Zone polygone cercle bleu excluant l'icône blanche de linkedin-->
+        <area shape="poly" 
+        coords="58,149,74,263,183,303,283,259,268,246,109,248,109,141,121,110,174,148,238,153,285,229,296,150,230,67,106,80" 
+        href="https://fr.linkedin.com/" alt="Linkedin" target="_blank">
+        <!-- Zone rectangle englobant tout le cercle instagram-->
+        <area shape="rect" coords="584,302,338,57" href="https://www.instagram.com/" alt="Instagram" target="_blank">
+        <!-- Zone poly en forme de lettre 'f' recouvrant l'icône de facebook-->
+        <area shape="poly" 
+        coords="187,424,187,444,209,445,212,469,189,469,189,525,163,529,161,477,142,469,138,444,158,447,163,400,210,400,214,424"
+        href="https://fr-fr.facebook.com/" alt="Facebook" target="_blank">
+        <!-- Zone cercle englobant l'oiseau twitter-->
+        <area shape="circle" coords="463,463,77" href="https://twitter.com/" alt="Twitter" target="_blank">
+    </map>
+</body>
+
+</html>

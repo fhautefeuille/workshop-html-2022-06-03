@@ -1,0 +1,19 @@
+/*Numérotation des listes ordonnées avec des symboles grecs*/
+ol li {
+    list-style-type: lower-greek;
+}
+
+/*Liste non ordonnée avec des cercles*/
+ul li {
+    list-style-type: circle;
+}
+
+/*Titre des listes de définition en gras*/
+dl dt {
+    font-weight: bold;
+}
+
+/* Définition en italique */
+dl dd {
+    font-style: italic;
+}
